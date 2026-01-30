@@ -71,7 +71,7 @@ struct EeveeSpotify: Tweak {
             return .lastAvailableiOS15
         case "8.9.8":
             return .lastAvailableiOS14
-        case version.contains("9.1"):
+        case _ where version.contains("9.1"):
             // 9.1.x versions don't have offline content helper classes
             return .v91
         default:
